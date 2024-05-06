@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><u><i>WELCOME TO REGISTER PAGE</i></u></h1>
+
+        <form  method="post" >
+            {% csrf_token %}
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Email"><br><br>
+
+            <label for="cn">Contact Number:</label>
+            <input type="text" id="cn" name="cn" placeholder="Enter Phone No."><br><br>
+            
+            <label for="un">Username:</label>
+            <input type="text" id="un" name="un" placeholder="Enter Username"><br><br>
+
+            <label for="pw">Password:</label>
+            <input type="password" id="pw" name="pw" placeholder="Enter Password"><br><br>
+
+            <label for="cpw">Conform Password:</label>
+            <input type="password" id="cpw" name="cpw" placeholder="Re-Enter Password"><br><br>
+            
+
+            <input type="submit" value="Register">
+        </form>
+    </center>
+</body>
+</html>
